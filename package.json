@@ -2,9 +2,12 @@
   "name": "vue3_elec_test",
   "version": "0.1.0",
   "private": true,
+  "main": "./electron/main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve:electron": "cross-env NODE_ENV=development electron .",
     "build": "vue-cli-service build",
+    "build:prod": "cross-env NODE_ENV=production vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -17,6 +20,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "electron": "^25.5.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3"
   },
